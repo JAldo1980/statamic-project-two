@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            .social-icon {
+                color: #6b7280; /* Tailwind's gray-500 color */
+                transition: color 0.3s ease;
+            }
+
+            .social-icon:hover {
+                color: #ffffff; /* White color */
+            }
+
+            .social-icon svg {
+                fill: currentColor; /* Ensure SVG fills with the current text color */
+            }
+        </style>
+    </head>
+    <body class="bg-gray-900 text-white text-lg font-mono">
+        <nav
+            class="
+                bg-black
+                text-xs
+                uppercase
+                text-green text-center
+                flex
+                items-center
+                justify-between
+                px-12
+                py-8
+                space-x-4
+            "
+        >
+            <div class="flex gap-6 items-center">
+                <img
+                    class="w-12 cursor-pointer"
+                    src="/images/logoorange.png"
+                    alt="logo"
+                />
+                {{ nav from="pages" include_home="true" }}
+                <a href="{{ url }}" class="p-2 block hover:text-yellow-200"
+                    >{{ title }}</a
+                >
+                {{ /nav }}
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="w-6 cursor-pointer social-icon">
+                    <img src="/images/icon_dribbble.svg" alt="Dribbble" />
+                </a>
+                <a href="#" class="w-6 cursor-pointer social-icon">
+                    <img src="/images/icon_instagram.svg" alt="Instagram" />
+                </a>
+                <a href="#" class="w-6 cursor-pointer social-icon">
+                    <img src="/images/icon_medium.svg" alt="Medium" />
+                </a>
+                <a href="#" class="w-6 cursor-pointer social-icon">
+                    <img src="/images/icon_twitter.svg" alt="Twitter" />
+                </a>
+            </div>
+        </nav>
+
+        <div class="container w-xlg mx-auto py-8">{{ template_content }}</div>
+    </body>
+</html>
