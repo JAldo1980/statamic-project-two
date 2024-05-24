@@ -7,3 +7,11 @@
 .xtraHuge {
     font-size: 12rem;
 }
+
+.social-icon img {
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: grayscale(100%);
+}

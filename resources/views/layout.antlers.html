@@ -28,7 +28,6 @@
                 bg-gray-900
                 text-xs
                 uppercase
-                text-green
                 flex
                 items-center
                 justify-between
@@ -45,22 +44,24 @@
                     alt="logo"
                 />
                 {{ nav from="pages" include_home="true" }}
-                <a href="{{ url }}" class="p-2 block hover:text-yellow-200"
+                <a
+                    href="{{ url }}"
+                    class="p-2 block text-gray-400 hover:text-white"
                     >{{ title }}</a
                 >
                 {{ /nav }}
             </div>
             <div class="flex gap-6">
-                <a href="#" class="w-6 cursor-pointer social-icon">
+                <a href="#" class="w-6 cursor-pointer social-icon hover-effect">
                     <img src="/images/icon_dribbble.svg" alt="Dribbble" />
                 </a>
-                <a href="#" class="w-6 cursor-pointer social-icon">
+                <a href="#" class="w-6 cursor-pointer social-icon hover-effect">
                     <img src="/images/icon_instagram.svg" alt="Instagram" />
                 </a>
-                <a href="#" class="w-6 cursor-pointer social-icon">
+                <a href="#" class="w-6 cursor-pointer social-icon hover-effect">
                     <img src="/images/icon_medium.svg" alt="Medium" />
                 </a>
-                <a href="#" class="w-6 cursor-pointer social-icon">
+                <a href="#" class="w-6 cursor-pointer social-icon hover-effect">
                     <img src="/images/icon_twitter.svg" alt="Twitter" />
                 </a>
             </div>

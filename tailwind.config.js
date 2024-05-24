@@ -23,7 +23,8 @@ export default {
                 "5xl": "3rem", // Existing size for reference
                 "6xl": "4rem", // Existing size for reference
                 "7xl": "5rem", // Custom size
-                "10xl": "10rem", // Custom size
+                "9xl": "10rem",
+                "15xl": "15rem", // Custom size
                 huge: "6rem", // Custom size
                 xtraHuge: "12rem",
             },
