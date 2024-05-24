@@ -3,3 +3,7 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+
+.xtraHuge {
+    font-size: 12rem;
+}
