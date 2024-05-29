@@ -15,3 +15,9 @@
 .social-icon:hover img {
     filter: grayscale(100%);
 }
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}

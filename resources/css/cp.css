@@ -2,3 +2,9 @@
 .xtraHuge {
     font-size: 12rem;
 }
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}

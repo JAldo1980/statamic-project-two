@@ -1,3 +1,22 @@
-<h1 class="text-9xl font-bold my-6 uppercase">We Are Coders</h1>
+<h1 class="text-9xl font-bold my-6 uppercase">
+    We Are
+    <span
+        class="
+            text-gradient
+            bg-gradient-to-b
+            from-red-600
+            to-red-300
+            text-9xl
+            font-bold
+            border-round
+        "
+        >Coders</span
+    >
+</h1>
 {{ content }}
-<div class="max-w-screen-xl mx-auto py-8">{{ partial:partials/grid }}</div>
+<div class="max-w-screen-xl mx-auto py-8">
+    {{ partial:partials/home-hero }} {{ partial:partials/trusted }} {{
+    partial:partials/grid }} {{partial:partials/testimonials }}
+    {{partial:partials/our-work }} {{partial:partials/discovery }}
+    {{partial:partials/footer }}
+</div>
