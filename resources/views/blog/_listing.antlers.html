@@ -1,21 +1,27 @@
-<section class="border border-green-400 mt-12">
-    <h2 class="p-5">Recent Blog Posts</h2>
+<h2 class="mt-16">Recent Blog Posts</h2>
+<section class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"">
+    
     {{slot}} {{ collection:blog limit="5" }}
-    <a
-        href="{{ url }}"
-        class="
-            flex
-            items-center
-            justify-between
-            p-5
-            border-t border-green-400
-            text-green-400
-            hover:text-green-900
-            hover:bg-green-400
-        "
-    >
-        <span>{{ title }}</span>
-        <span class="text-green-900 text-sm">{{ date }}</span>
-    </a>
+    <div class="">
+       
+            <a
+            href="{{ url }}"
+            class="
+                flex
+                justify-between
+                p-5
+                text-white
+                hover:text-gray-900
+                hover:bg-red-400
+                flex 
+                flex-col
+            "
+        >
+        <img src="{{ featured_image }}" alt="blog featured image" />
+            <span>{{ title }}</span>
+            <span class="text-white text-sm  hover:text-gray-900">{{ date }}</span>
+        </a>
+    </div>
+ 
     {{ /collection:blog }}
 </section>

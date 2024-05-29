@@ -28,6 +28,9 @@ export default {
                 huge: "6rem", // Custom size
                 xtraHuge: "12rem",
             },
+            colors: {
+                "custom-red": "#f65846",
+            },
         },
     },
 
