@@ -7,12 +7,16 @@
     </head>
     <body>
         <header>
-            <h1>{{ title }}</h1>
+            <h1 class="text-4xl mt-16">{{ title }}</h1>
         </header>
-        <main>
-            <p>{{ content | markdown }}</p>
+        <main class="flex flex-col">
+            <p class="mt-16">{{ content | markdown }}</p>
 
-            <form method="post" action="/!/forms/contact">
+            <form
+                class="mt-16 flex flex-col"
+                method="post"
+                action="/!/forms/contact"
+            >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
 
@@ -27,11 +31,25 @@
                     required
                 ></textarea>
 
-                <button type="submit">Send</button>
+                <button
+                    class="
+                        mt-4
+                        bg-red-500
+                        text-white
+                        py-2
+                        px-6
+                        rounded-full
+                        hover:bg-red-600
+                        transition
+                        duration-300
+                        ease-in-out
+                    "
+                    type="submit"
+                >
+                    Book a Discovery Call
+                </button>
             </form>
         </main>
-        <footer>
-            <p>&copy; {{ date format="Y" }} Your Company</p>
-        </footer>
+        {{partial:partials/footer }}
     </body>
 </html>

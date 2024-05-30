@@ -4,14 +4,99 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ title }}</title>
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
     </head>
-    <body>
-        <header>
-            <h1>{{ title }}</h1>
+    <body class="bg-gray-100 text-gray-800">
+        <header class="bg-red-500 text-white p-6 text-center">
+            <h1 class="text-4xl font-bold">{{ title }}</h1>
         </header>
-        <main>{{ content | markdown }}</main>
-        <footer>
-            <p>&copy; {{ date format="Y" }} Your Company</p>
-        </footer>
+        <main class="max-w-screen-xl mx-auto p-8">
+            <section class="mb-16">
+                <h2 class="text-3xl font-semibold mb-4">Who We Are</h2>
+                <p class="text-lg leading-relaxed">
+                    Welcome to We Are Coders, one of the UK’s most experienced
+                    digital marketing agencies. We specialise in website design,
+                    brand development, and marketing campaigns. Our mission is
+                    to help your business stand out in the crowded digital
+                    landscape.
+                </p>
+            </section>
+            <section class="mb-16">
+                <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
+                <p class="text-lg leading-relaxed">
+                    At We Are Coders, we are dedicated to building deep,
+                    long-term relationships with our clients. We focus on your
+                    business goals, whether it's enhancing brand exposure or
+                    generating new business enquiries. We work collaboratively
+                    to ensure your success.
+                </p>
+            </section>
+            <section class="mb-16">
+                <h2 class="text-3xl font-semibold mb-4">Our Team</h2>
+                <p class="text-lg leading-relaxed">
+                    Our team of experienced designers, developers, and marketers
+                    are passionate about what they do. We combine our expertise
+                    in frontend and backend development, design, and server-side
+                    technology to provide comprehensive support for your
+                    project.
+                </p>
+            </section>
+            <section class="mb-16">
+                <h2 class="text-3xl font-semibold mb-4">What We Do</h2>
+                <p class="text-lg leading-relaxed">
+                    From the initial planning stages to the final launch, we are
+                    there every step of the way. Our services include:
+                </p>
+                <ul class="list-disc list-inside text-lg leading-relaxed">
+                    <li>
+                        Website Design: Creating visually stunning and
+                        user-friendly websites.
+                    </li>
+                    <li>
+                        Website Development: Building fast, responsive, and
+                        secure websites.
+                    </li>
+                    <li>
+                        Brand Development: Crafting a unique and memorable brand
+                        identity.
+                    </li>
+
+                    <li>
+                        Marketing Campaigns: Developing strategies to boost your
+                        online presence and drive traffic.
+                    </li>
+                    <li>
+                        Continual Maintenance: Providing ongoing support and
+                        updates to keep your site running smoothly.
+                    </li>
+                </ul>
+            </section>
+            <section class="mb-16">
+                <h2 class="text-3xl font-semibold mb-4">Our Process</h2>
+                <p class="text-lg leading-relaxed">
+                    We believe in a transparent and collaborative process. Your
+                    introduction to us typically starts with a 20-30 minute
+                    video call where we discuss your priorities, review your
+                    current website and campaigns, and identify key
+                    opportunities for growth. From there, we move into the
+                    detailed planning and design phases, ensuring every aspect
+                    of your website aligns with your business goals.
+                </p>
+            </section>
+            <section>
+                <h2 class="text-3xl font-semibold mb-4">Why Choose Us</h2>
+                <p class="text-lg leading-relaxed">
+                    Choosing We Are Coders means choosing a partner dedicated to
+                    your success. Our tailored approach ensures that your
+                    website is unique, functional, and effective. No matter your
+                    budget, we work with you to create a solution that not only
+                    meets but exceeds your expectations.
+                </p>
+            </section>
+        </main>
+        {{ partial:partials/footer }}
     </body>
 </html>
