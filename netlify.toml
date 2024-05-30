@@ -7,3 +7,6 @@
 
 [[plugins]]
   package = "@netlify/plugin-php"
+
+[context.production.processing]
+  skip_processing = true
