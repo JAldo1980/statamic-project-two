@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "php please static:site --server=host --destination=public"
+
+[context.production.environment]
+  PHP_VERSION = "8.2"
+
+[[plugins]]
+  package = "@netlify/plugin-php"
